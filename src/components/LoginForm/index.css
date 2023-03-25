@@ -1,0 +1,138 @@
+.login-form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-website-landing-image {
+  width: 100%;
+  max-height: 350px;
+  flex-grow: 1;
+}
+.login-heading {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0f172a;
+  margin-left: 20px;
+}
+.mobile-input-container {
+  width: 100%;
+  padding: 20px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.input-label {
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #475569;
+}
+
+.username-input-field {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+
+.password-input-field {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  font-family: roboto;
+  font-size: 12px;
+}
+
+.login-button {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: #f7931e;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.desktop-website-logo {
+  display: none;
+}
+.desktop-website-landing-image {
+  display: none;
+}
+.Tasty-Kitchens-heading {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .mobile-website-landing-image {
+    display: none;
+  }
+  .form-container {
+    min-width: 456px;
+    margin: auto;
+    box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .desktop-website-landing-image {
+    display: block;
+    max-width: 1440px;
+    width: 50%;
+  }
+  .login-form-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .desktop-website-logo {
+    display: block;
+    width: 49px;
+    height: 39px;
+    align-self: center;
+  }
+  .Tasty-Kitchens-heading {
+    display: block;
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    color: #f7931e;
+    align-self: center;
+    text-align: center;
+  }
+  .login-heading {
+    align-self: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,60 @@
+.cart-list-item {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.food-image-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cart-food-image {
+  width: 150px;
+  height: 100px;
+  border-radius: 8px;
+}
+.food-name {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #183b56;
+}
+.item-cost {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffa412;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.mobile-list-item {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .cart-list-item {
+    display: none;
+  }
+  .mobile-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .mobile-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .food-name {
+    text-align: center;
+    font-size: 14px;
+  }
+}

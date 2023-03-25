@@ -1,0 +1,162 @@
+.desktop-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.desktop-header-ul-container {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+}
+.desktop-header-heading {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #f7931e;
+}
+.header-logo-image {
+  width: 53px;
+  height: 43px;
+}
+.desktop-header-list-item1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.desktop-header-list-item2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.desktop-header-home {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  color: #f7931e;
+}
+.desktop-header-cart {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  color: #334155;
+}
+.desktop-logout-button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #f7931e;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.mobile-header-container {
+  display: none;
+}
+.nav-list-bg-container {
+  display: none;
+}
+.link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+  .desktop-header-ul-container {
+    display: none;
+  }
+  .mobile-header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .mobile-header-logo-image {
+    width: 35px;
+    height: 28px;
+  }
+  .mobile-header-heading {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    color: #f7931e;
+  }
+  .mobile-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .menu-button {
+    background-color: transparent;
+    border: none;
+  }
+  .popup-container {
+    background-color: grey;
+  }
+  .nav-list-bg-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    background-color: white;
+    position: relative;
+    top: -250px;
+    left: -50px;
+  }
+  .mobile-nav-list-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    margin-right: 24%;
+  }
+  .mobile-nav-home {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #334155;
+  }
+  .mobile-nav-cart {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #f7931e;
+  }
+  .mobile-logout-button {
+    width: 73px;
+    height: 32px;
+    background: #f7931e;
+    border-radius: 8px;
+    color: #ffffff;
+    border: none;
+  }
+  .close-button {
+    background-color: transparent;
+    border: none;
+  }
+  .trigger-button {
+    border: none;
+  }
+  .link-item {
+    text-decoration: none;
+  }
+}

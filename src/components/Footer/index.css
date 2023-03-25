@@ -1,0 +1,38 @@
+.footer-container {
+  width: 100%;
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+.Footer-heading {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+}
+.footer-logo-image {
+  width: 37px;
+  height: 30px;
+  margin-right: 20px;
+}
+.footer-para {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+.social-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
