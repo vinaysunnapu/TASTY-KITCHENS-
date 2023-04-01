@@ -7,7 +7,7 @@ const RestaurantCard = props => {
   const {id, imageUrl, name, rating, totalReviews} = restCard
   console.log(rating)
   return (
-    <li className="rest-list-item" testid="restaurant-item">
+    <li testid="restaurant-item" className="rest-list-item">
       <Link to={`/restaurant/${id}`}>
         <img src={imageUrl} alt="restaurant" className="rest-image" />
       </Link>

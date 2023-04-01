@@ -52,7 +52,7 @@ class SliderList extends Component {
   }
 
   renderOffersLoadingView = () => (
-    <div className="offer-loader-container" testid="restaurants-offers-loader">
+    <div testid="restaurants-offers-loader" className="offer-loader-container">
       <Loader type="TailSpin" color="#F7931E" height="50" width="50" />
     </div>
   )

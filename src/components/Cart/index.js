@@ -20,7 +20,7 @@ const Cart = () => (
             {showEmptyCartView ? (
               <NoCartView />
             ) : (
-              <div className="sub-cart-container" testid="cartItem">
+              <div testid="cartItem" className="sub-cart-container">
                 <div className="cart-header-container">
                   <p className="header-item">Item</p>
                   <p className="header-item">Quantity</p>

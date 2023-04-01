@@ -18,8 +18,8 @@ class Header extends Component {
   render() {
     return (
       <nav className="desktop-nav-container">
-        <ul className="desktop-header-ul-container">
-          <li className="desktop-header-list-item1">
+        <div className="desktop-header-ul-container">
+          <div className="desktop-header-list-item1">
             <Link to="/">
               <img
                 src="https://res.cloudinary.com/dcauubpq9/image/upload/v1674875356/Group_7420_tjlrcp.png"
@@ -28,8 +28,8 @@ class Header extends Component {
               />
             </Link>
             <h1 className="desktop-header-heading">Tasty Kitchens</h1>
-          </li>
-          <li className="desktop-header-list-item2">
+          </div>
+          <ul className="desktop-header-list-item2">
             <Link to="/" className="link">
               <li className="desktop-header-home">Home</li>
             </Link>
@@ -41,13 +41,12 @@ class Header extends Component {
                 type="button"
                 className="desktop-logout-button"
                 onClick={this.onClickLogout}
-                testid="logout-button"
               >
                 Logout
               </button>
             </li>
-          </li>
-        </ul>
+          </ul>
+        </div>
         <div className="mobile-header-container">
           <div className="mobile-logo-container">
             <Link to="/">
@@ -83,7 +82,6 @@ class Header extends Component {
                         type="button"
                         className="mobile-logout-button"
                         onClick={this.onClickLogout}
-                        testid="logout-button"
                       >
                         Logout
                       </button>

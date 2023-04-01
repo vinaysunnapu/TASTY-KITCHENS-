@@ -20,10 +20,10 @@ const Footer = () => (
       The only thing we are serious about is food. Contact us on
     </p>
     <div className="social-icons-container">
-      <FaPinterestSquare color="#ffffff" testid="pintrest-social-icon" />
-      <FaInstagram color="#ffffff" testid="instagram-social-icon" />
-      <FaTwitter color="#ffffff" testid="twitter-social-icon" />
-      <FaFacebookSquare color="#ffffff" testid="facebook-social-icon" />
+      <FaPinterestSquare testid="pintrest-social-icon" color="#ffffff" />
+      <FaInstagram testid="instagram-social-icon" color="#ffffff" />
+      <FaTwitter testid="twitter-social-icon" color="#ffffff" />
+      <FaFacebookSquare testid="facebook-social-icon" color="#ffffff" />
     </div>
   </div>
 )

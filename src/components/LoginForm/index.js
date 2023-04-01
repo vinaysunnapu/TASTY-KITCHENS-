@@ -69,6 +69,13 @@ class LoginForm extends Component {
   renderUsernameField = () => {
     const {username} = this.state
 
+    const {showSubmitError, errorMsg} = this.state
+    const jwtToken = Cookies.get('jwt_token')
+
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
+
     return (
       <>
         <label className="input-label" htmlFor="username">

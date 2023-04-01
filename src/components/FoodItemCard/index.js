@@ -55,7 +55,7 @@ class FoodItemCard extends Component {
           }
 
           return (
-            <li className="list-item-container" testid="foodItem">
+            <li testid="foodItem" className="list-item-container">
               <img
                 src={foodImageUrl}
                 alt="food-item"
@@ -82,21 +82,21 @@ class FoodItemCard extends Component {
                 ) : (
                   <div className="item-quantity-container">
                     <button
+                      testid="decrement-count"
                       type="button"
                       className="quantity-button"
                       onClick={onClickDecreaseQuantity}
-                      testid="decrement-count"
                     >
                       <BsDashSquare size={14} />
                     </button>
-                    <p className="item-quantity" testid="active-count">
+                    <p testid="active-count" className="item-quantity">
                       {itemQuantity}
                     </p>
                     <button
+                      testid="increment-count"
                       type="button"
                       className="quantity-button"
                       onClick={onClickIncreaseQuantity}
-                      testid="increment-count"
                     >
                       <BsPlusSquare size={14} />
                     </button>

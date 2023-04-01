@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const NoCartView = () => {
@@ -14,9 +15,11 @@ const NoCartView = () => {
       <p className="no-cart-para">
         Your cart is empty. Add something from the menu.
       </p>
-      <button type="button" className="no-cart-button">
-        Order Now
-      </button>
+      <Link to="/">
+        <button type="button" className="no-cart-button">
+          Order Now
+        </button>
+      </Link>
     </div>
   )
 }

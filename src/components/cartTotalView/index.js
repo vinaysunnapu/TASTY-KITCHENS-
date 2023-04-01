@@ -20,7 +20,7 @@ const CartTotalView = () => (
           <div className="order-total-container">
             <h1 className="order-total-heading">Order Total :</h1>
             <div>
-              <p className="amount-para" testid="total-price">
+              <p testid="total-price" className="amount-para">
                 <BiRupee /> {allItemsOrderCost}
               </p>
               <Link to="/payment">
